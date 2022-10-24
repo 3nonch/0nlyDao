@@ -1,0 +1,36 @@
+.header {
+  &__logo {
+    width: 33%;
+    &--img {
+      height: 7rem;
+      filter: drop-shadow(0.3rem 0.3rem 0.1rem $color-black);
+    }
+  }
+  &__text {
+    text-align: center;
+    width: 33%;
+    color: #e07a5f;
+    &--logo {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.45rem;
+    }
+  }
+  &__menu {
+    width: 33%;
+    text-align: right;
+    &--socials ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        &:not(:last-child) {
+          margin-right: 2rem;
+        }
+        img {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
