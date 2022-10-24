@@ -9,4 +9,27 @@
   align-items: center;
 }
 
+.heading-primary {
+    font-size: 3rem;
+    color: $color-primary-red;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-weight: 500;
+}
 
+.heading-secondary {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba($color-white, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.blockchain-title {
+    font-size: 10rem;
+    font-weight: 200;
+    letter-spacing: 1rem;
+    color: $color-primary-orange;
+    display: inline-block;
+    
+}

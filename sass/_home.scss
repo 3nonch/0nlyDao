@@ -11,11 +11,24 @@ html {
 }
 
 body {
-  background-image: url('../assets/background.png');
+  background-image: url("../assets/background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 section.mintschedule {
-    margin-top: 3rem;
+  .heading {
+    text-align: right;
+    margin-bottom: 3rem;
+    background-color: rgba($color-black, 1);
+    border-radius: 3px;
+    padding: 1rem 1rem;
+    .left {
+        padding: 1rem;
+    }
+    img {
+        width: 12rem;
+    }
+  }
+  margin-top: 3rem;
 }

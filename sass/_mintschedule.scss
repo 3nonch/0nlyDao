@@ -1,8 +1,8 @@
 .mint-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
   gap: 3rem;
+  grid-template-rows: max-content;
 
   div {
     height: 15rem;
@@ -11,66 +11,118 @@
     align-items: flex-end;
     padding: 1rem;
     border-radius: 0.3rem;
-    box-shadow: 0.2rem 0.2rem 0.3rem rgba($color-black, 0.6);
-    &.square {
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba($color-black, .5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .square {
         height: 33rem;
-        background-color: orange;
     }
-    }
-    
   }
 
   .box1 {
-    grid-column: 1 / 3;
+    grid-column: 1/3;
     grid-row: 1;
     background-image: linear-gradient(
         to right bottom,
         rgba($color-black, 0.3),
         rgba($color-black, 0.3)
       ),
-      url("https://pbs.twimg.com/media/FeeTVDeWQAEgHoa?format=jpg&name=small");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      url("https://pbs.twimg.com/media/FfjwEQHVEAAFNZ9?format=png&name=small");
   }
 
-  .box2 {
-    grid-column: 1 / 3;
+   .box2 {
+    grid-column: 1/3;
     grid-row: 2;
-  }
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/Ffukd42agAEgK0N?format=jpg&name=medium");
+   }
 
-  .box3 {
-    grid-column: 1 / 3;
+   .box3 {
+    grid-column: 1/3;
     grid-row: 3;
-  }
-  .box4 {
-    grid-column: 1 / 3;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/profile_images/1578439559926280192/oYV6kWOW_400x400.jpg");
+   }
+   .box4 {
+    grid-column: 1/3;
     grid-row: 4;
-  }
-  .box5 {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-  }
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/Ffrz5IVX0AA-Oiv?format=jpg&name=small");
+   }
+   .box5 {
+    grid-column: 3;
+    grid-row: 1/ span 2;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/FeSRrzAakAAjBeL?format=png&name=360x360");
+   }
 
-  .box6 {
-    grid-column: 3 / 4;
+   .box6 {
+    grid-column: 3;
     grid-row: 3 / 5;
-  }
-  .box7 {
-    grid-column: 4 / 6;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/FfwHIxvUoAEo_ug?format=png&name=small");
+   }
+   .box7 {
+    grid-column: 4/6;
     grid-row: 1;
-  }
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/FflDTLWUYAAvMRm?format=jpg&name=small");
+   }
 
-  .box8 {
-    grid-column: 4 / 6;
+   .box8 {
+    grid-column: 4/6;
     grid-row: 2;
-  }
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/profile_images/1579853777913495552/nGKHc_9d_400x400.jpg");
+   }
 
-  .box9 {
-    grid-column: 4 / 6;
+   .box9 {
+    grid-column: 4/6;
     grid-row: 3;
-  }
-  .box10 {
-    grid-column: 4 / 6;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/Ff08D3kXoAEy2oU?format=jpg&name=small");
+   }
+   .box10 {
+    grid-column: 4/6;
     grid-row: 4;
-  }
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-black, 0.3),
+        rgba($color-black, 0.3)
+      ),
+      url("https://pbs.twimg.com/media/FfbPE_nXkAE2dT_?format=jpg&name=medium");
+   }

@@ -8,6 +8,27 @@
   justify-content: space-between;
   align-items: center; }
 
+.heading-primary {
+  font-size: 3rem;
+  color: #ec4b42;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 500; }
+
+.heading-secondary {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem; }
+
+.blockchain-title {
+  font-size: 10rem;
+  font-weight: 200;
+  letter-spacing: 1rem;
+  color: #f18616;
+  display: inline-block; }
+
 * {
   margin: 0;
   padding: 0;
@@ -25,28 +46,38 @@ body {
 
 section.mintschedule {
   margin-top: 3rem; }
+  section.mintschedule .heading {
+    text-align: right;
+    margin-bottom: 3rem;
+    background-color: black;
+    border-radius: 3px;
+    padding: 1rem 1rem; }
+    section.mintschedule .heading .left {
+      padding: 1rem; }
+    section.mintschedule .heading img {
+      width: 12rem; }
 
 .btn-grid {
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #fff;
   transition-property: color transform background-color;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
   backface-visibility: hidden;
-  background-color: rgba(241, 134, 22, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 0.5rem 1rem;
   border-radius: 3px;
   font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 0.3rem; }
   .btn-grid:hover {
-    color: #ec4b42;
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1.2rem 1.3rem rgba(0, 0, 0, 0.5);
-    background-color: rgba(255, 255, 255, 0.7); }
+    color: #000;
+    transform: translateX(0.4rem);
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.8);
+    background-color: rgba(236, 75, 66, 0.8); }
   .btn-grid:active {
-    transform: translateY(0); }
+    transform: translateX(0); }
 
 .header__logo {
   width: 33%; }
@@ -79,8 +110,8 @@ section.mintschedule {
 .mint-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 3rem; }
+  gap: 3rem;
+  grid-template-rows: max-content; }
   .mint-grid div {
     height: 15rem;
     display: flex;
@@ -88,51 +119,59 @@ section.mintschedule {
     align-items: flex-end;
     padding: 1rem;
     border-radius: 0.3rem;
-    box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.6); }
-    .mint-grid div.square {
-      height: 33rem;
-      background-color: orange; }
+    box-shadow: 0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .mint-grid .square {
+    height: 33rem; }
 
 .box1 {
-  grid-column: 1 / 3;
+  grid-column: 1/3;
   grid-row: 1;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FeeTVDeWQAEgHoa?format=jpg&name=small");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FfjwEQHVEAAFNZ9?format=png&name=small"); }
 
 .box2 {
-  grid-column: 1 / 3;
-  grid-row: 2; }
+  grid-column: 1/3;
+  grid-row: 2;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/Ffukd42agAEgK0N?format=jpg&name=medium"); }
 
 .box3 {
-  grid-column: 1 / 3;
-  grid-row: 3; }
+  grid-column: 1/3;
+  grid-row: 3;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/profile_images/1578439559926280192/oYV6kWOW_400x400.jpg"); }
 
 .box4 {
-  grid-column: 1 / 3;
-  grid-row: 4; }
+  grid-column: 1/3;
+  grid-row: 4;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/Ffrz5IVX0AA-Oiv?format=jpg&name=small"); }
 
 .box5 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 3; }
+  grid-column: 3;
+  grid-row: 1/ span 2;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FeSRrzAakAAjBeL?format=png&name=360x360"); }
 
 .box6 {
-  grid-column: 3 / 4;
-  grid-row: 3 / 5; }
+  grid-column: 3;
+  grid-row: 3 / 5;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FfwHIxvUoAEo_ug?format=png&name=small"); }
 
 .box7 {
-  grid-column: 4 / 6;
-  grid-row: 1; }
+  grid-column: 4/6;
+  grid-row: 1;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FflDTLWUYAAvMRm?format=jpg&name=small"); }
 
 .box8 {
-  grid-column: 4 / 6;
-  grid-row: 2; }
+  grid-column: 4/6;
+  grid-row: 2;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/profile_images/1579853777913495552/nGKHc_9d_400x400.jpg"); }
 
 .box9 {
-  grid-column: 4 / 6;
-  grid-row: 3; }
+  grid-column: 4/6;
+  grid-row: 3;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/Ff08D3kXoAEy2oU?format=jpg&name=small"); }
 
 .box10 {
-  grid-column: 4 / 6;
-  grid-row: 4; }
+  grid-column: 4/6;
+  grid-row: 4;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://pbs.twimg.com/media/FfbPE_nXkAE2dT_?format=jpg&name=medium"); }
